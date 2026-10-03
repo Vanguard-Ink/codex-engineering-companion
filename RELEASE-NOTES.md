@@ -8,4 +8,4 @@
 - Per-application pinned/audited reader dependency locks, separate Windows CI definition and optional browser smoke with retained screenshots.
 - Edition source manifest and public-readiness scan; raw historical authoring records preserved separately.
 
-Proposed local candidate tag: codex-engineering-edition-1-rc1-verified2. Final public repository/license/edition/tag require publisher input. This candidate reports local correctness evidence only; no new model run, remote push, hosted CI or publication is asserted.
+Proposed local candidate tag: codex-engineering-edition-1-rc1-final. Final public repository/license/edition/tag require publisher input. This candidate reports local correctness evidence only; no new model run, remote push, hosted CI or publication is asserted.

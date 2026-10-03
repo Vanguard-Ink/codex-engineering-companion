@@ -8,4 +8,4 @@ Minimum context: exact product surface and date; return source URL and excerpt p
 Tests planned: auth failure, unavailable server, malformed result, hostile instruction text and unexpected permission request.
 Fallback: use dated official docs directly; record NOT_TESTED instead of fabricating successful MCP calls.
 Disposition: NOT_CONFIGURED / NOT_TESTED; approve a specific server only after evidence review.
-Evidence: resources/compatibility.md; optional-codex-run.md covers CLI separately, not MCP proof.
+Evidence: resources/compatibility.md; workflows/optional-codex-run.md covers CLI separately, not MCP proof.

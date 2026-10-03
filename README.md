@@ -2,7 +2,7 @@
 
 This repository supports a technical reader who can use Git, inspect diffs and run tests. Start with the three workflows below. All default commands are local deterministic checks; they use no Codex account or model API. Dependency installation needs npm registry access.
 
-**Status:** local release candidate `1.0.0-rc.1`, proposed tag `codex-engineering-edition-1-rc1-verified2`. Public URL, final edition date, license and final release/tag are **PUBLISHER INPUT REQUIRED**. This directory is the proposed repository root; do not run its commands from the book workspace root.
+**Status:** local release candidate `1.0.0-rc.1`, proposed tag `codex-engineering-edition-1-rc1-final`. Public URL, final edition date, license and final release/tag are **PUBLISHER INPUT REQUIRED**. This directory is the proposed repository root; do not run its commands from the book workspace root.
 
 ## Setup (Windows / PowerShell)
 
