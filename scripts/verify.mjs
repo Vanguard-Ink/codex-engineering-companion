@@ -59,7 +59,10 @@ if(mode==='all'||mode==='labs'){
   command('economics',process.env.PYTHON??(process.platform==='win32'?'python.exe':'python3'),[join(root,'labs/ch10-12/economics/illustrative_economics.py')]);
   command('predicate-example',process.execPath,[join(root,'examples/overdue-predicate.mjs')]);
 }
-if(mode==='all'||mode==='evidence') command('historical-provenance',process.execPath,[join(root,'scripts/check-provenance.mjs')]);
+if(mode==='all'||mode==='evidence') {
+  command('historical-provenance',process.execPath,[join(root,'scripts/check-provenance.mjs')]);
+  command('edition-manifest',process.execPath,[join(root,'scripts/check-manifest.mjs')]);
+}
 const baselineAfter=tree(join(root,'northstar'));
 checks.push({name:'preserved-baseline',pass:JSON.stringify(baselineBefore)===JSON.stringify(baselineAfter)});
 const summary={run_id:runId,mode,status:checks.every(x=>x.pass)?'PASS':'FAIL',environment:{node:process.version,platform:process.platform,arch:process.arch,sqlite:process.versions.sqlite},model_run:false,external_service:false,checks,baseline_before:baselineBefore,baseline_after:baselineAfter,limits:['Local deterministic correctness replay; no production or account-dependent run.','HTTP/browser contract check does not prove rendered visual quality.','Other operating systems are untested unless a separate retained CI run establishes support.']};

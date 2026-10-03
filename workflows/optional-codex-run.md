@@ -10,10 +10,14 @@ Official non-interactive documentation was read 2026-10-03: https://learn.chatgp
 
 ```powershell
 $taskCheckout='ABSOLUTE_PATH_TO_SEPARATE_TASK_CHECKOUT'
-$runDirectory='ABSOLUTE_PATH_TO_NEW_EMPTY_EVIDENCE_DIRECTORY'
-Get-Content -Raw templates/B-task-contract-filled.md | codex exec --json --ephemeral --sandbox workspace-write -C "$taskCheckout" -o "$runDirectory/final-message.txt" - > "$runDirectory/events.jsonl" 2> "$runDirectory/stderr.log"
+$runDirectory='ABSOLUTE_PATH_TO_NEW_EVIDENCE_DIRECTORY'
+New-Item -ItemType Directory -Path $runDirectory -ErrorAction Stop
+Get-Content -Raw templates/B-task-contract-filled.md | Set-Content -Encoding utf8 "$runDirectory/prompt.md"
+Get-Content -Raw "$runDirectory/prompt.md" | codex exec --json --ephemeral --sandbox workspace-write -C "$taskCheckout" -o "$runDirectory/final-message.txt" - > "$runDirectory/events.jsonl" 2> "$runDirectory/stderr.log"
 $modelExit=$LASTEXITCODE
 ```
+
+Directory creation stops if that path already exists. Choose a new run path to preserve prior evidence. The actual prompt file is saved before invocation; retain its SHA256 from `Get-FileHash "$runDirectory/prompt.md" -Algorithm SHA256` in the new run manifest.
 
 4. Save version, configuration, prompt hash and exit code. Review the actual diff before acceptance. Run the task checkout's typecheck/test/build, then run the edition's external evaluator with candidate-installed tsx and an absolute checkout path:
 
