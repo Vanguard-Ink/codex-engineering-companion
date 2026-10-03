@@ -1,18 +1,23 @@
 {
   "argv": [
-    "C:\\Users\\boo_b\\AppData\\Local\\OpenAI\\Codex\\bin\\8e5b6932251c2c1c\\codex.exe",
+    "<historical Codex executable>",
     "exec",
     "--json",
     "--ephemeral",
     "--sandbox",
     "workspace-write",
     "-C",
-    "D:\\GPT WORK\\HIGHCONTENT BOOK\\VIBECODE SERIES 0\\companion\\experiments\\candidate",
+    "<historical candidate checkout>",
     "-o",
-    "D:\\GPT WORK\\HIGHCONTENT BOOK\\VIBECODE SERIES 0\\companion\\experiments\\run-01\\final-message.txt",
+    "<historical run evidence>/final-message.txt",
     "-"
   ],
   "startedAt": "2026-09-06T12:37:35.540322+00:00",
   "config": "user configuration retained; no global settings changed; inherited instructions may apply",
-  "protocolSha256": "7556d56a163e4b4d9a49827fd450ba95c42d7fa290dcd54f37584367783260e9"
+  "protocolSha256": "7556d56a163e4b4d9a49827fd450ba95c42d7fa290dcd54f37584367783260e9",
+  "redaction": {
+    "kind": "reader derivative of immutable historical record",
+    "original_sha256": "f63e0e57c80f63c61744a84f89624a6312789a65dd5f8e08e2679966c103f468",
+    "fields": "Executable and local filesystem paths redacted only; original private authoring record unchanged."
+  }
 }

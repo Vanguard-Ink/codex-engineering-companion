@@ -10,7 +10,7 @@ All paths are relative to this repository root. Original prose/excerpt commands 
 | 4 | `npm run workflow:ch04`; B template; `workflows/AGENTS.md.example` | Authored contract + deterministic counterexamples |
 | 5 | C template; `labs/ch04-06/context-packet.md` | Bounded context worked example |
 | 6 | `labs/ch04-06/labs.mjs`; `instruction-fixtures.json` | Contradiction diagnosis; not actual agent instruction precedence measurement |
-| 7 | `workflows/AGENTS.md.example` | Example persistent guidance, not an installed skill |
+| 7 | `resources/skills/context-investigator/SKILL.md` | Complete authored skill; installation/model execution not claimed |
 | 8 | F templates; optional guide | MCP review checklist, no server configured/called |
 | 9 | `workflows/fail-repair.mjs`; Chapter 15 outbox | Authored checkpoint + isolated recovery |
 | 10 | `npm run labs`; economics exercise | Illustrative scheduling, no model comparison arms |
@@ -20,7 +20,7 @@ All paths are relative to this repository root. Original prose/excerpt commands 
 | 14 | `labs/ch13-15/access-audit.ts`, `run-labs.ts` | Domain roles/audit slice |
 | 15 | `labs/ch13-15/outbox.ts`; L templates | Single-worker simulator and explicit operational gaps |
 | Appendix B | `templates/B-task-contract-{blank,filled}.md` | Targeted overdue task |
-| Appendix C | `templates/C-context-packet-{blank,filled}.md` | Authority/path/clock map |
+| Appendix C — AGENTS.md Patterns | `templates/C-AGENTS-pattern-{blank,filled}.md`; separate C-context-packet templates | Persistent instruction example + supplemental context map |
 | Appendix F | `templates/F-mcp-checklist-{blank,filled}.md` | No server provisioned; explicit NOT_TESTED fields |
 | Appendix G | `templates/G-eval-record-{blank,filled}.md` | Output paths; filled example is instructional schema, attach actual receipt |
 | Appendix K | `templates/K-economics-{blank,filled}.md` | Arithmetic fixture, not observed saving |

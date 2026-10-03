@@ -1,0 +1,2 @@
+# Preserve edition file bytes so manifest hashes survive clean checkout.
+* -text
