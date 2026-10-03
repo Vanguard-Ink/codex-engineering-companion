@@ -1,0 +1,10 @@
+Implemented in this checkout:
+
+- “Overdue only” checkbox with loading, error, and empty states.
+- `overdue=true` filters unfinished tasks with past deadlines in active projects within the authorized organization.
+- Omitted or `false` preserves the full list; invalid/repeated values return 400.
+- Added 19 regression tests; authentication unchanged.
+
+Validation: typecheck passed, all 24 tests passed, build passed, and diff checks passed. Temporary servers stopped.
+
+Limitation: automatic approval review denied browser access to the local app, so live UI behavior and appearance remain unverified.

@@ -1,0 +1,15 @@
+{
+  "kind": "historical single-run excerpt",
+  "original_directory": "Companion/Northstar/experiments/run-01",
+  "included_records": {
+    "result.json": "3d1ad00a62a36079725c7742e804787246d3c1968b2db9a637ad8c60f42593e2",
+    "invocation.json": "f63e0e57c80f63c61744a84f89624a6312789a65dd5f8e08e2679966c103f468",
+    "prompt.txt": "4846af3ba8ef01622fdd142483769aa7074583a0ecaad786fb7474522f29de89",
+    "final-message.txt": "181fee81b4cb2fcd8092dfae646fedf6804cf49ebbbfa2ce17e8ac87a9f200d2"
+  },
+  "excluded_raw_records": {
+    "events.jsonl": "38bb9c20fc49ed0e181867bddb8f5d3cca4fc2984bb7c2616a4e90464334d2d1",
+    "stderr.log": "af195cfd84f6d55462cad707662262ac447f4b3d47e84c0f03158a1e8479477e"
+  },
+  "boundary": "Copied records retain original dates/configuration. This release does not claim a new model run."
+}

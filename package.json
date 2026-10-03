@@ -1,0 +1,19 @@
+{
+  "name": "codex-engineering-companion-edition-candidate",
+  "version": "1.0.0-rc.1",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24 <25" },
+  "devDependencies": { "playwright": "1.62.1" },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "verify": "node scripts/verify.mjs all",
+    "workflow:ch03": "node scripts/verify.mjs ch03",
+    "workflow:ch04": "node scripts/verify.mjs ch04",
+    "workflow:ch12": "node scripts/verify.mjs ch12",
+    "labs": "node scripts/verify.mjs labs",
+    "evidence": "node scripts/verify.mjs evidence"
+    ,"browser:install": "playwright install chromium"
+    ,"browser:smoke": "node scripts/browser-smoke.mjs"
+  }
+}

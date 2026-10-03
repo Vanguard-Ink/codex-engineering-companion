@@ -1,0 +1,10 @@
+# Northstar task instructions (example; copy only into a chosen task checkout)
+
+Use npm and Node 24. Read the task contract and context packet before editing.
+Preserve session and organization membership checks, parameterized SQL and injectable clock.
+Scope changes to task-list API, client and relevant tests. No schema or deployment changes.
+Do not edit external verification/acceptance.ts or historical evidence.
+Run typecheck, tests and build in the task checkout; record exact commands and results.
+Return the diff summary, evidence paths, remaining uncertainty and checks not run.
+
+This file is a teaching example. Its presence alone does not prove Codex loaded it. Copying instructions, choosing sandbox and inspecting inherited/user configuration are explicit steps in the optional guide.

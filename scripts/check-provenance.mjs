@@ -1,0 +1,11 @@
+import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {resolve,dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import assert from 'node:assert/strict';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'../evidence/historical');
+const m=JSON.parse(readFileSync(resolve(root,'provenance.json'),'utf8'));
+for(const [name,hash] of Object.entries(m.included_records))assert.equal(createHash('sha256').update(readFileSync(resolve(root,name))).digest('hex'),hash);
+const r=JSON.parse(readFileSync(resolve(root,'result.json'),'utf8'));
+assert.equal(r.trialCount,1);assert.equal(r.elapsedSeconds,254.813);assert.equal(r.dollarCost,null);
+console.log('PASS copied historical record hashes; no new Codex experiment');

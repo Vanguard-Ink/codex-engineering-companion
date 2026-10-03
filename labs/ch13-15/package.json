@@ -1,0 +1,6 @@
+{
+  "name": "northstar-case-study-labs",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node run-labs.ts" }
+}

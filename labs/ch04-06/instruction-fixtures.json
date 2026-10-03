@@ -1,0 +1,34 @@
+{
+  "broken": [
+    {
+      "condition": "package-manager",
+      "action": "npm"
+    },
+    {
+      "condition": "package-manager",
+      "action": "pnpm"
+    },
+    {
+      "condition": "checks-after-edit",
+      "action": "all"
+    },
+    {
+      "condition": "checks-after-edit",
+      "action": "none"
+    }
+  ],
+  "repaired": [
+    {
+      "condition": "package-manager",
+      "action": "npm"
+    },
+    {
+      "condition": "checks-after-edit",
+      "action": "focused"
+    },
+    {
+      "condition": "checks-before-handoff",
+      "action": "required-acceptance"
+    }
+  ]
+}

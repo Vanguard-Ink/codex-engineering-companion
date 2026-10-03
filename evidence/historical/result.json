@@ -1,0 +1,25 @@
+{
+  "startedAt": "2026-09-06T12:37:35.540322+00:00",
+  "elapsedSeconds": 254.813,
+  "exitCode": 0,
+  "usage": {
+    "input_tokens": 404445,
+    "cached_input_tokens": 368896,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 4646,
+    "reasoning_output_tokens": 688
+  },
+  "humanAttentionMinutes": null,
+  "humanReviewCorrections": null,
+  "dollarCost": null,
+  "trialCount": 1,
+  "cliVersion": "codex-cli 0.153.4",
+  "eventCount": 36,
+  "status": "COMPLETED",
+  "limits": [
+    "single local run",
+    "human attention not measured",
+    "not a human-versus-agent benchmark",
+    "global configuration retained"
+  ]
+}
